@@ -1,0 +1,6 @@
+print('\nс помощью трёх команд "print":')
+print('Glo Academy')
+print(' ')
+print('Glo Academy')
+print('\nс помощью одной команды "print":')
+print('Glo Academy\n \nGlo Academy')
