@@ -1,0 +1,9 @@
+print('Назовите ваше имя')
+first_name = input()
+print('Теперь назовите ваше отчество')
+second_name = input()
+print('И, наконец, назовите вашу фамилию')
+last_name = input()
+full_name = first_name + ' ' + second_name + ' ' + last_name
+print('Ваше полное имя:\n ')
+print(full_name.title())
