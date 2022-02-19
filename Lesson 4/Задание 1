@@ -1,0 +1,6 @@
+print('Введите целое число')
+num1 = int(input())
+print('Введите ещё одно целое число')
+num2 = int(input())
+sum = num1**2 + num2**2
+print(sum)
