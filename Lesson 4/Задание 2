@@ -1,0 +1,21 @@
+print('Введите целое число')
+num1 = int(input())
+print('Введите ещё одно целое число')
+num2 = int(input())
+userinput = 'Вы ввели числа:' + ' ' + str(num1) + ' ' + 'и' + ' ' + str(num2)
+print(userinput)
+operation1 = num1 * num2
+output1 = str(num1) + ' ' + 'умноженное на' + ' ' + str(num2) + ' ' + 'равно' + ' ' + str(operation1)
+print(output1)
+operation2 = num1 / num2
+output2 = str(num1) + ' ' + 'делённое на' + ' ' + str(num2) + ' ' + 'равно' + ' ' + str(operation2)
+print(output2)
+operation3 = num1 // num2
+output3 = str(num1) + ' ' + 'нацело делённое на' + ' ' + str(num2) + ' ' + 'равно' + ' ' + str(operation3)
+print(output3)
+operation4 = num1 % num2
+output4 = 'Остаток от деления' +' ' + str(num1) + ' ' + 'на' + ' ' + str(num2) + ' ' + 'равно' + ' ' + str(operation4)
+print(output4)
+operation5 = num1 ** num2
+output5 = str(num1) + ' ' + 'в степени' + ' ' + str(num2) + ' ' + 'равно' + ' ' + str(operation5)
+print(output5)
