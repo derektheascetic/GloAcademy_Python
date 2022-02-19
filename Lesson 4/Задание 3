@@ -1,0 +1,9 @@
+print('Введите одно целое трёхзначное положительное число')
+num = int(input())
+first = num // 100
+second = num % 100 // 10
+third = num % 10
+sum = first + second + third
+prod = first * second * third
+print('Сумма цифр числа' + ' ' + str(num) + ' ' + 'равна' + ' ' + str(sum))
+print('Произведение цифр числа' + ' ' + str(num) + ' ' + 'равно' + ' ' + str(prod))
