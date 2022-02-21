@@ -1,0 +1,8 @@
+print('Введите вес дыни (одно целое число от 1 до 100)')
+num = int(input())
+
+if num % 2 == 0 and num != 2:
+    print('YES')
+else:
+    print('NO')
+    
