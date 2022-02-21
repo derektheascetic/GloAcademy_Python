@@ -1,0 +1,6 @@
+import math
+
+k = int(input())
+m = int(input())
+print(str(math.ceil(k / m)))
+
