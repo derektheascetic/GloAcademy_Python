@@ -1,0 +1,6 @@
+print('Введите текст')
+string = input()
+if 'GloAcademy' in string:
+    print('YES')
+else:
+    print('NO')
