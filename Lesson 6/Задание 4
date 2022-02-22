@@ -1,0 +1,3 @@
+print('Введите название вашей любимой команды')
+team_name = input()
+print(team_name * 5)
