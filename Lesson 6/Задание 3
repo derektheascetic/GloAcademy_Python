@@ -1,0 +1,6 @@
+text_1 = input()
+text_2 = input()
+text_3 = input()
+articles = [text_1, text_2, text_3]
+max_symbols = max(articles, key=len)
+print(max_symbols)
