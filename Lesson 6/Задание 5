@@ -1,0 +1,9 @@
+print('введите ваш e-mail')
+email = input()
+
+if '@' not in email:
+    print('некорректный')
+elif '.' not in email:
+    print('некорректный')
+else:
+    print('корректный')
