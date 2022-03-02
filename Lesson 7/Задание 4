@@ -1,0 +1,10 @@
+a = int(input())
+b = int(input())
+if a < b:
+    for value in range(a, b + 1):
+        if not value % 2:
+            print(value)
+else:
+    for value_rev in range(b, a + 1):
+        if not value_rev % 2:
+            print(value_rev)
