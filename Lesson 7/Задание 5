@@ -1,0 +1,4 @@
+n = int(input())
+for value in range(1, 11):
+    product = n * value
+    print(str(n) + ' x ' + str(value) + ' = ' + str(product))
