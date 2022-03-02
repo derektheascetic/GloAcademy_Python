@@ -1,0 +1,4 @@
+n = int(input())
+for value in range(n + 1):
+    squares = value ** 2
+    print('Квадрат числа ' + str(value) + ' равен ' + str(squares))
