@@ -1,0 +1,11 @@
+number = int(input())
+total = 0
+counter = 0
+
+while number != 0:
+    total = total + number
+    counter += 1
+    number = int(input())
+
+arith_mean = total // counter
+print(arith_mean)
