@@ -1,0 +1,14 @@
+number = int(input())
+total_positive = 0
+total_negative = 0
+
+while number != 0:
+    if number > 0:
+        total_positive += 1
+        number = int(input())
+    elif number < 0:
+        total_negative += 1
+        number = int(input())
+
+product = total_positive * total_negative
+print(product)
