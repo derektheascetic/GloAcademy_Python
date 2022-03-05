@@ -1,0 +1,16 @@
+n = int(input())
+value = n
+flag = 0
+
+while value:
+    if value % 10 == 1:
+        flag = 1
+        break
+    else:
+        value = value // 10
+
+if flag == 1:
+    print('YES')
+else:
+    print('NO')
+    
