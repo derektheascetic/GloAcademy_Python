@@ -1,0 +1,4 @@
+for k in range(24):
+    for j in range(60):
+        for i in range(60):
+            print(k, ':', j, ':', i)
