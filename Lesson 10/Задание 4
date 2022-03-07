@@ -1,0 +1,12 @@
+symbol = input()
+first_low = ord('a')
+last_low = ord('z')
+first_upp = ord('A')
+last_upp = ord('Z')
+
+if first_low <= ord(symbol) <= last_low:
+    print(symbol.upper())
+elif first_upp <= ord(symbol) <= last_upp:
+    print(symbol.lower())
+else:
+    print(symbol)
