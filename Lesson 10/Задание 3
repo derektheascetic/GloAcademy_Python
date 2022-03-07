@@ -1,0 +1,13 @@
+#решение без учёта буквы Ё (она считается как Е)
+
+letter = input()
+first_rus = ord('А')
+last_rus = ord('А') + 33
+
+for i in range(first_rus, last_rus):
+    if first_rus <= ord(letter) <= last_rus:
+        print('YES')
+        break
+    else:
+        print('NO')
+        break
