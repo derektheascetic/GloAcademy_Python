@@ -1,0 +1,3 @@
+string = input()
+count = len(string)
+print(f'{count} \n{string[-1]} \n{string[0:2]} \n{string[-2:]} \n{string[::-1]} \n{string[1:-1]}')
