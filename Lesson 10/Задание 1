@@ -1,0 +1,5 @@
+first_letter = chr(97)
+last_letter = chr(122)
+
+for i in range(ord(first_letter), ord(last_letter) + 1):
+    print(f'{chr(i)}', end=' ')
