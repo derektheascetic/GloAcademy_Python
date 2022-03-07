@@ -1,0 +1,8 @@
+name_1 = input('Введите вашу фамилию: ')
+name_2 = input('Введите ваше имя: ')
+name_3 = input('Введите ваше отчество: ')
+last_name = name_1.title()
+first_name = name_2.title()
+second_name = name_3.title()
+
+print(f'{last_name} {first_name:.1}.{second_name:.1}.')
