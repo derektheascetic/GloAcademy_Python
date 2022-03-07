@@ -1,0 +1,12 @@
+lit_1 = ord(input())
+lit_2 = ord(input())
+
+if lit_1 < lit_2:
+    for i in range(lit_1, lit_2 + 1):
+        s = chr(i)
+        print(s, end=' ')
+else:
+    for i in range(lit_2, lit_1 + 1):
+        s = chr(i)
+        print(s, end=' ')
+    
