@@ -1,0 +1,3 @@
+directory = input()
+strings = '\n'.join(directory.split(chr(92)))
+print(strings)
