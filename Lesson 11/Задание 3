@@ -1,0 +1,12 @@
+string = input()
+ip = (string.split('.'))
+flag = 0
+
+for i in range(len(ip)):
+    num = int(ip[i])
+    if 0 <= num <= 255:
+        flag = flag + 1
+    else:
+        print('NO')
+if flag == 4:
+    print('YES')
