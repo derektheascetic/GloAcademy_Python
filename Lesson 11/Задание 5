@@ -1,0 +1,9 @@
+lst = input()
+numbers = lst.split()
+alone = []
+
+for i in numbers:
+    if numbers.count(i) == 1:
+        alone.append(i)
+
+print(*alone)
