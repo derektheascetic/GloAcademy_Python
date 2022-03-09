@@ -1,0 +1,16 @@
+def maximum_list(string):
+    space_list = string.split()
+    num_list = []
+
+    for space in space_list:
+        if space.isnumeric():
+            num_list.append(int(space))
+
+    return max(num_list)
+
+
+string1 = input()
+string2 = input()
+
+mult_strings = maximum_list(string1) * maximum_list(string2)
+print(mult_strings)
