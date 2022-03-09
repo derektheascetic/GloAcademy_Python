@@ -1,0 +1,7 @@
+def delivery_cost(value):
+    return 100 + 50 * (value - 1)
+
+
+goods_value = int(input())
+
+print(delivery_cost(goods_value))
