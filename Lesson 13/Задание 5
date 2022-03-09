@@ -1,0 +1,61 @@
+def is_valid(value):
+    return value.isdigit() and int(value) >= 1
+
+
+def game_activity(border_left, border_right):
+    count = 0
+
+    while True:
+        border_left = int(border_left)
+        border_right = int(border_right)
+        midle = (border_left + border_right) // 2
+        
+        print('Загаданное число', midle, '? Введите "=", если верно!')
+        attempt = input('">", если больше и "<", если меньше')
+        
+        if attempt != "=" and attempt != ">" and attempt != "<":
+            print('Некорректный ввод. Больше или меньше?')
+        elif attempt == '<':
+            border_right = midle - 1
+            count += 1
+        elif attempt == '>':
+            border_left = midle + 1
+            count += 1
+        elif attempt == '=':
+            count += 1
+            return print('Угадал с ', count, 'попыток')
+
+
+def start_game():
+    while True:
+        border_left = input('Укажите левую границу числового диапазона:  ')
+        border_right = input('Укажите правую границу числового диапазона: ')
+
+        if not is_valid(border_left) or not is_valid(border_right):
+            print('Некорректный ввод.\nУказывайте только целые числа больше единицы')
+            continue
+        else:
+            return border_left, border_right
+
+
+def play_again():
+    request = ''
+    while request.lower() != "да" or request.lower() != "нет":
+        request = input('Хотите сыграть ещё раз? (Y/N): ').lower()
+        if request == 'yes' or request == 'y' or request == 'да' or request == 'д':
+            print('Сыграем еще раз!')
+            return False
+        elif request == 'no' or request == 'n' or request == 'нет' or request == 'н':
+            print('Спасибо за игру!\nДо новых встреч!')
+            return True
+
+
+print('Добро пожаловать в игру "Компьютер, угадай число!"')
+flag = False
+
+while flag != True:
+    border_left, border_right = start_game()
+
+    game_activity(border_left, border_right)
+
+    flag = play_again()
