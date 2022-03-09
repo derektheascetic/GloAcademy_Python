@@ -1,0 +1,16 @@
+def verify_magic_data(date):
+    date_list = date.split('.')
+    numerals = []
+
+    for dot in date_list:
+        if dot.isnumeric():
+            numerals.append(int(dot))
+
+    if numerals[0] * numerals[1] == numerals[2] % 100:
+        return True
+    else:
+        return False
+
+
+data = input()
+print(verify_magic_data(data))
